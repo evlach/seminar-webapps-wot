@@ -20,7 +20,7 @@
     },
     "readmeFilename": "README.md",
     "engines": {
-        "node": ">=6.0.0"
+        "node": ">=6.9.1"
     },
     "scripts": {
         "test": "mocha -R spec -t 1000 test/*"
