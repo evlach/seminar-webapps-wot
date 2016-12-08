@@ -1,0 +1,28 @@
+{
+    "name": "mymath",
+    "description": "Generic math addition library",
+    "version": "0.1.0",
+    "author": {
+        "name": "Web Compliance Center",
+        "email": "webcc@fit.fraunhofer.de"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "mocha": "2.5.3"
+    },
+    "homepage": "https://example.com/mymath",
+    "main": "index",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://example.com/scm/mymath.git"
+    },
+    "readmeFilename": "README.md",
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "scripts": {
+        "test": "mocha -R spec -t 1000 test/*"
+    }
+}
