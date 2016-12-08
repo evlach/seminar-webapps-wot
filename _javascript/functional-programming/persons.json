@@ -1,0 +1,82 @@
+[
+  {
+    "firstName": "Max",
+    "lastName": "Mustermann",
+    "age": 44,
+    "contacts": [
+      {
+        "type": "Festnetz",
+        "value": "2345/23452345"
+      },
+      {
+        "type": "Mobilnummer",
+        "value": "0124/23452345"
+      },
+      {
+        "type": "Mobilnummer",
+        "value": "0123/23452345"
+      },
+      {
+        "type": "E-Mail",
+        "value": "max.mustermann@example.com"
+      }
+    ]
+  },
+  {
+    "firstName": "Moritz",
+    "lastName": "Mustermann",
+    "age": 55,
+    "contacts": [
+      {
+        "type": "Festnetz",
+        "value": "2345/56565656"
+      },
+      {
+        "type": "Mobilnummer",
+        "value": "0123/56565656"
+      },
+      {
+        "type": "E-Mail",
+        "value": "moritz.mustermann@example.com"
+      }
+    ]
+  },
+  {
+    "firstName": "Peter",
+    "lastName": "Peterchen",
+    "age": 66,
+    "contacts": [
+      {
+        "type": "Festnetz",
+        "value": "2345/23456789"
+      },
+      {
+        "type": "Mobilnummer",
+        "value": "0123/23456789"
+      },
+      {
+        "type": "E-Mail",
+        "value": "peter.peterchen@example.com"
+      }
+    ]
+  },
+  {
+    "firstName": "Petra",
+    "lastName": "Peterchen",
+    "age": 65,
+    "contacts": [
+      {
+        "type": "Festnetz",
+        "value": "2345/23456789"
+      },
+      {
+        "type": "Mobilnummer",
+        "value": "0123/23456788"
+      },
+      {
+        "type": "E-Mail",
+        "value": "petra.peterchen@example.com"
+      }
+    ]
+  }
+]

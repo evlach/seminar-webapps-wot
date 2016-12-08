@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE GREETING SYSTEM "greeting.dtd">
+<GREETING>Hello XML!<test>
+error
+</test>
+</GREETING>

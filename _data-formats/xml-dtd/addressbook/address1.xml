@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<person>
+   <fname>John</fname>
+   <lname>Smith</lname>
+   <phone type="work">563-456-7890</phone>
+   <phone type="home">534-567-8901</phone>   
+   <email type="home">jsmith@somemail.com</email>
+   <email type="work">john@lovesushi.com</email>
+   <address type="home">34 S. Colon St.</address>
+   <address type="work">9967 W. Shrimp Ave.</address>
+</person>

@@ -1,0 +1,19 @@
+/* ===== Stylesheet for the song DTD.
+         Content definition =====
+ */
+
+song:before {
+    content: "SONG:";
+}
+
+composer:before {
+    content: "Composer: ";
+}
+
+publisher:before {
+    content: "Publisher: ";
+}
+
+artist:before {
+    content: "Artist: ";
+}

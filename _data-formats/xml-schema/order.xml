@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding = "UTF-8" ?>
+
+<order orderid="THX1138" customer="3263827"
+    xsi:noNamespaceSchemaLocation="order.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <item itemid="C33">
+    <quantity>36</quantity>
+    <unitprice currency="dollars">.35</unitprice>
+  </item>
+  <item itemid="M48">
+    <quantity>1</quantity>
+    <unitprice currency="dollars">2200</unitprice>
+  </item>
+</order>

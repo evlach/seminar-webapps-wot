@@ -1,0 +1,26 @@
+/* ===== Stylesheet for the song DTD =====
+ */
+
+song {
+    display: block;
+    background: #fff;
+    color: #000;
+    margin: 1em;
+    padding: 0.2em;
+    border: 1px #f00 dotted;
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 150%;
+}
+
+title {
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 0.2em;
+    font-size: 150%;
+}
+
+composer, publisher, artist, photo {
+    display: block;
+    padding: 0.2em 0.2em 0.2em 3em;
+}

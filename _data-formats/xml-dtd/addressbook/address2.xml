@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<person>
+   <fname>SlackJawedLocal</fname>
+   <lname>Cletus</lname>
+   <phone type="work">123-456-7890</phone>
+   <phone type="home">234-567-8901</phone>
+   <phone type="cell">345-678-9012</phone>
+   <email type="home">cletus@hotmail.com</email>
+   <email type="work">cletus@micrsquish.com</email>
+   <address type="home">1234 S. Elm St.</address>
+   <address type="work">4567 W. Pine St.</address>
+</person>

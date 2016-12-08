@@ -1,0 +1,12 @@
+<!ELEMENT song (title, composer+, producer*, publisher*,
+                 length?, year?, artist+)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT composer (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!-- This should be a four digit year like "1999",
+     not a two-digit year like "99" -->
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>

@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema"
+	 elementFormDefault = "qualified">
+	<xsd:element name = "order">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref = "item" maxOccurs = "unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name = "orderid" use = "required" type = "xsd:ID"/>
+			<xsd:attribute name = "customer" use = "required" type = "xsd:integer"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name = "item">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref = "quantity"/>
+				<xsd:element ref = "unitprice"/>
+			</xsd:sequence>
+			<xsd:attribute name = "itemid" type = "xsd:ID"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name = "quantity" type = "xsd:unsignedLong"/>
+	<xsd:element name = "unitprice">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base = "xsd:float">
+					<xsd:attribute name = "currency" use = "required" type = "currencyType"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name = "currencyType">
+		<xsd:restriction base = "xsd:string">
+			<xsd:enumeration value = "euros"/>
+			<xsd:enumeration value = "dollars"/>
+			<xsd:enumeration value = "pounds"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

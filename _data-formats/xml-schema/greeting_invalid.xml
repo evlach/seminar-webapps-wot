@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding = "UTF-8" ?>
+
+<GREETING xsi:noNamespaceSchemaLocation="greeting.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><a>Hello XML!</a></GREETING>

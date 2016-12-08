@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="song_content.css" type="text/css"?>
+<?xml-stylesheet href="song.css" type="text/css"?>
+
+<song xmlns="http://www.cafeconleche.org/namespace/song"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Backstreets</title>
+  <photo
+    xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"
+    xlink:href="http://brucespringsteen.net/art/minis_175/borntorun.jpg"
+    alt="Bruce Springsteen playing a guitar" width="175" height="175" />
+  <composer>Bruce Springsteen</composer>
+  <publisher xlink:type="simple" xlink:href="http://www.columbiarecords.com/">
+    Columbia Records
+  </publisher>
+  <artist>Bruce Springsteen</artist>
+</song>

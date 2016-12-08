@@ -1,0 +1,23 @@
+{
+    "name": "seminar-webapps-wot",
+    "version": "0.1.0",
+    "description": "Bonn-IT code examples for the new lessons scripts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webcc/seminar-webapps-wot.git"
+    },
+    "author": {
+        "name": "Web Compliance Center",
+        "email": "webcc@fit.fraunhofer.de"
+    },
+    "license": "Apache-2.0",
+    "dependencies": {
+        "express": "4.14.0"
+    },
+    "devDependencies": {
+    },
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {}
+}
