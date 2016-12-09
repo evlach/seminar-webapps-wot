@@ -3,6 +3,18 @@
 const uuid = require("uuid");
 const httpError = require("http-errors");
 const http = require("http");
+const DummySensor = require("dummy-sensor").DummySensor;
+
+let sensors = [];
+for(let i=0; i<10; i++) {
+  sensors.push(new DummySensor());
+}
+
+sensors = sensors.map(sensor =>
+  ({
+    id: sensor.id
+  })
+)
 
 module.exports = class Sensors
 {
@@ -11,7 +23,6 @@ module.exports = class Sensors
         switch (request.method)
         {
             case "GET":
-              let sensors = [];
               response.format(
                 {
                     "application/json": () =>
