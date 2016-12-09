@@ -10,5 +10,8 @@
     "sensors"
   ],
   "author": "Philip Ackermann",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^3.0.1"
+  }
 }
