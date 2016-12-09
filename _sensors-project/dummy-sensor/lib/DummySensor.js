@@ -11,27 +11,21 @@ module.exports = class DummySensor extends Sensor {
   }
 
   handleStarted() {
-      return new Promise((resolve, reject) => {
-          this._intervalHandle = setInterval(
-              () => {
-                  let dummySensorReading = new DummySensorReading(
-                      Date.now(),
-                      Math.random()
-                  )
-                  this.onchange({
-                      reading: dummySensorReading
-                  });
-              },
-              this.sensorOptions.frequency
-          );
-          resolve();
-      })
+    this._intervalHandle = setInterval(
+        () => {
+            let dummySensorReading = new DummySensorReading(
+                Date.now(),
+                Math.random()
+            )
+            this.onchange({
+                reading: dummySensorReading
+            });
+        },
+        this.sensorOptions.frequency
+    );
   }
 
   handleStopped() {
-      return new Promise((resolve, reject) => {
-          clearInterval(this._intervalHandle);
-          resolve();
-      });
+      clearInterval(this._intervalHandle);
   }
 }

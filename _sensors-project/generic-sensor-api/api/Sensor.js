@@ -54,9 +54,9 @@ module.exports = class Sensor {
     this.state = SensorState.ACTIVATING;
     this.state = SensorState.ACTIVATED;
     this.onactivate();
-    return this.handleStarted();
+    this.handleStarted();
   }
   stop() {
-    return this.handleStopped();
+    this.handleStopped();
   }
 }
