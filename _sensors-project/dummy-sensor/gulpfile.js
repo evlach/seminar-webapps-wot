@@ -1,6 +1,7 @@
 'use strict';
 const gulp = require('gulp');
 const mocha = require('gulp-mocha');
+const istanbul = require('gulp-istanbul');
 
 gulp.task('pre-test-coverage', function () {
   return gulp.src(['./lib/**/*.js'])
