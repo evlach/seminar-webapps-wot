@@ -2,6 +2,7 @@
 
 const parser = require("body-parser");
 const Users = require("./routes/users");
+const Sensors = require("./routes/sensors");
 const DefaultRouter = require("./DefaultRouter");
 
 module.exports = class APIRouter extends require("express").Router
@@ -13,6 +14,9 @@ module.exports = class APIRouter extends require("express").Router
             parser.json({ "inflate": true, "strict": true }), Users.createStorageDirectory, Users.user);
         this.all("/users", DefaultRouter.xPoweredBy,
             parser.json({ "inflate": true, "strict": true }), Users.createStorageDirectory, Users.users);
+
+        this.all("/sensors", DefaultRouter.xPoweredBy,
+            parser.json({ "inflate": true, "strict": true }), Sensors.sensors);
 
         /* ===== 404 Error handling ===== */
         this.use(Users._404);
