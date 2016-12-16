@@ -5,16 +5,22 @@ const httpError = require("http-errors");
 const http = require("http");
 const DummySensor = require("dummy-sensor").DummySensor;
 
-let sensors = [];
+let sensors = new Map();
 for(let i=0; i<10; i++) {
-  sensors.push(new DummySensor());
+  let sensor = new DummySensor({
+    frequency: 2000
+  });
+  sensor.onchange = event => sensor.reading = event.reading;
+  sensors.set(sensor.id, sensor);
 }
 
-sensors = sensors.map(sensor =>
-  ({
-    id: sensor.id
-  })
-)
+Array
+    .from(sensors.entries())
+    .forEach(entry => entry[1].start());
+
+let sensorsResponse = Array
+  .from(sensors.keys())
+  .map(id => ({id: id}));
 
 module.exports = class Sensors
 {
@@ -27,7 +33,7 @@ module.exports = class Sensors
                 {
                     "application/json": () =>
                     {
-                        response.status(200).json({ "sensors": sensors });
+                        response.status(200).json({ "sensors": sensorsResponse });
                     },
                     "default": () => { next(new httpError.NotAcceptable()); }
                 });
@@ -48,11 +54,22 @@ module.exports = class Sensors
 
     static sensor (request, response, next)
     {
+        let sensor = sensors.get(request.params.sensor);
+        let sensorResponse = {
+          id: sensor.id,
+          reading: sensor.reading
+        }
         switch (request.method)
         {
-
             case "GET":
-
+                response.format(
+                {
+                    "application/json": () =>
+                    {
+                        response.status(200).type("application/json").send(sensorResponse);
+                    },
+                    "default": () => { next(new httpError.NotAcceptable()); }
+                });
                 break;
             case "DELETE":
             case "PUT":

@@ -31,7 +31,7 @@ module.exports = class DummySensor extends Sensor {
   handleStopped() {
       return new Promise((resolve, reject) => {
         clearInterval(this._intervalHandle);
-        resolve();        
+        resolve();
       });
   }
 }
